@@ -1,0 +1,73 @@
+---
+import Page from '../layouts/Page.astro';
+---
+
+<Page
+  title="Contact"
+  description="Send Patriotic Angler a question, a correction or a topic you'd like covered."
+  lede="Spotted a mistake, have a question, or want a topic covered? Send a note."
+>
+  <form name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company" class="form">
+    <input type="hidden" name="form-name" value="contact" />
+    <p class="hp">
+      <label>Leave this empty: <input name="company" tabindex="-1" autocomplete="off" /></label>
+    </p>
+    <p>
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required />
+    </p>
+    <p>
+      <label for="email">Email, so we can reply</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
+    </p>
+    <p>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </p>
+    <button class="btn btn-red" type="submit">Send message</button>
+  </form>
+</Page>
+
+<style>
+  .form {
+    max-width: 34rem;
+  }
+
+  .form p {
+    margin-bottom: 1.1rem;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 0.8rem;
+    border: 2px solid var(--rule);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--ink);
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: var(--navy);
+    outline: none;
+  }
+
+  .hp {
+    position: absolute;
+    left: -9999px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+</style>

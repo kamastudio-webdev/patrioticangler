@@ -1,0 +1,26 @@
+---
+interface Props {
+  size?: number;
+  class?: string;
+  /** Color of the stem and outline. */
+  line?: string;
+  /** Color of the band across the middle. */
+  band?: string;
+}
+const { size = 34, class: cls, line = '#14304a', band = '#14304a' } = Astro.props;
+---
+
+<svg
+  class={cls}
+  width={size}
+  height={size}
+  viewBox="0 0 64 64"
+  aria-hidden="true"
+  focusable="false"
+>
+  <rect x="29" y="2" width="6" height="16" rx="3" fill={line}></rect>
+  <circle cx="32" cy="38" r="22" fill="#ffffff"></circle>
+  <path d="M10 38a22 22 0 0 1 44 0z" fill="#d7262f"></path>
+  <rect x="10" y="36" width="44" height="4" fill={band}></rect>
+  <circle cx="32" cy="38" r="22" fill="none" stroke={line} stroke-width="4"></circle>
+</svg>

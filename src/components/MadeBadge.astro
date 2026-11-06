@@ -1,0 +1,75 @@
+---
+interface Props {
+  origin: 'usa' | 'assembled-usa';
+  size?: number;
+  class?: string;
+}
+
+const { origin, size = 92, class: cls } = Astro.props;
+const uid = `seal-${Math.random().toString(36).slice(2, 9)}`;
+const top = origin === 'usa' ? 'MADE IN USA' : 'ASSEMBLED IN USA';
+const label = origin === 'usa' ? 'Made in USA' : 'Assembled in USA';
+---
+
+<span class:list={['seal', `seal-${origin}`, cls]} role="img" aria-label={label}>
+  <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    <defs>
+      <path id={uid} d="M 50,50 m -32,0 a 32,32 0 1,1 64,0"></path>
+    </defs>
+    <circle cx="50" cy="50" r="47" class="ring-outer"></circle>
+    <circle cx="50" cy="50" r="43" class="ring-inner"></circle>
+    <text class="arc">
+      <textPath href={`#${uid}`} startOffset="50%" text-anchor="middle">{top}</textPath>
+    </text>
+    <path
+      class="star"
+      d="M50 45 l5 10.2 11.2 1.6 -8.1 7.9 1.9 11.2 -10 -5.3 -10 5.3 1.9 -11.2 -8.1 -7.9 11.2 -1.6z"
+    ></path>
+  </svg>
+</span>
+
+<style>
+  .seal {
+    display: inline-block;
+    line-height: 0;
+    transform: rotate(-9deg);
+  }
+
+  .ring-outer {
+    fill: var(--brass-tint);
+    stroke: var(--brass);
+    stroke-width: 3;
+  }
+
+  .ring-inner {
+    fill: none;
+    stroke: var(--brass);
+    stroke-width: 1.1;
+    stroke-dasharray: 2 2.2;
+  }
+
+  .arc {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 13.5px;
+    letter-spacing: 1.4px;
+    fill: var(--brass-dark);
+  }
+
+  .seal-assembled-usa .arc {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  .star {
+    fill: var(--red);
+  }
+
+  .seal-assembled-usa .ring-outer {
+    fill: #fff;
+  }
+
+  .seal-assembled-usa .star {
+    fill: var(--navy);
+  }
+</style>

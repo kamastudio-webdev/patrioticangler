@@ -1,0 +1,141 @@
+---
+import products from '../data/products.json';
+import { amazonUrl } from '../config';
+import MadeBadge from './MadeBadge.astro';
+
+interface Props {
+  id: string;
+  note?: string;
+}
+
+const { id, note } = Astro.props;
+const p = products.find((x) => x.id === id);
+if (!p) {
+  throw new Error(`Product "${id}" is not in src/data/products.json`);
+}
+const madeHere = p.origin === 'usa' || p.origin === 'assembled-usa';
+---
+
+<aside class:list={['lure-card', { 'is-usa': madeHere }]} aria-label={`Product: ${p.name}`}>
+  <div class="header">
+    <span class="hang" aria-hidden="true"></span>
+    <span class="kind">{p.kind}</span>
+  </div>
+  <div class="body">
+    <p class="brand">{p.brand}</p>
+    <p class="name">{p.name}</p>
+    {note && <p class="note">{note}</p>}
+    <a class="btn btn-red" href={amazonUrl(p.asin)} rel="sponsored nofollow noopener" target="_blank">
+      Check price on Amazon
+    </a>
+    {
+      madeHere && (
+        <p class="origin">
+          <strong>{p.origin === 'usa' ? 'Made in USA:' : 'Assembled in USA:'}</strong> {p.originNote}
+        </p>
+      )
+    }
+  </div>
+  {madeHere && <MadeBadge origin={p.origin as 'usa' | 'assembled-usa'} size={88} class="stamp" />}
+</aside>
+
+<style>
+  .lure-card {
+    position: relative;
+    margin: 2rem 0;
+    background: var(--card);
+    border: 2px solid var(--navy);
+    border-radius: 10px 10px 6px 6px;
+    max-width: 34rem;
+    box-shadow: 4px 4px 0 var(--navy);
+  }
+
+  .header {
+    position: relative;
+    background: var(--navy);
+    border-radius: 7px 7px 0 0;
+    padding: 1.35rem 1rem 0.55rem;
+    text-align: center;
+  }
+
+  /* The hang slot you'd find on a lure card at the bait shop. */
+  .hang {
+    position: absolute;
+    top: 0.45rem;
+    left: 50%;
+    width: 2.6rem;
+    height: 0.6rem;
+    transform: translateX(-50%);
+    background: var(--paper);
+    border-radius: 999px;
+  }
+
+  .kind {
+    color: #e6edf3;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .body {
+    padding: 1.1rem 1.25rem 1.25rem;
+  }
+
+  .is-usa .body {
+    padding-right: 6.5rem;
+  }
+
+  .brand {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .name {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 1.05;
+    color: var(--navy);
+    margin: 0.15rem 0 0.6rem;
+  }
+
+  .note {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .origin {
+    margin: 0.9rem 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  .origin strong {
+    color: var(--brass-dark);
+  }
+
+  .lure-card :global(.stamp) {
+    position: absolute;
+    right: 0.8rem;
+    top: 3.1rem;
+  }
+
+  @media (max-width: 520px) {
+    .is-usa .body {
+      padding-right: 1.25rem;
+    }
+    .is-usa .name {
+      padding-right: 4.8rem;
+    }
+    .lure-card :global(.stamp) {
+      top: 3rem;
+      right: 0.6rem;
+    }
+    .lure-card :global(.stamp svg) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+</style>

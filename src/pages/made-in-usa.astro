@@ -1,0 +1,136 @@
+---
+import CategoryPage from '../components/CategoryPage.astro';
+import MadeBadge from '../components/MadeBadge.astro';
+import products from '../data/products.json';
+import { amazonUrl } from '../config';
+
+const stamped = products
+  .filter((p) => p.origin === 'usa' || p.origin === 'assembled-usa')
+  .sort((a, b) => a.brand.localeCompare(b.brand));
+---
+
+<CategoryPage category="made-in-usa" title="American-made fishing gear">
+  <div class="legend">
+    <div>
+      <MadeBadge origin="usa" size={96} />
+      <p><strong>Made in USA.</strong> The maker or the product listing says the product is made in the USA.</p>
+    </div>
+    <div>
+      <MadeBadge origin="assembled-usa" size={96} />
+      <p><strong>Assembled in USA.</strong> Put together in the USA from parts made somewhere else.</p>
+    </div>
+  </div>
+  <p class="note">
+    No stamp means nobody we trust has said where it's made, or the labels disagree. Check the package if it matters to
+    you.
+  </p>
+
+  <section class="stamped" aria-labelledby="stamped-h">
+    <h2 id="stamped-h">Every stamped product on the site</h2>
+    <ul>
+      {
+        stamped.map((p) => (
+          <li>
+            <MadeBadge origin={p.origin as 'usa' | 'assembled-usa'} size={54} />
+            <div class="who">
+              <p class="pname">{p.name}</p>
+              <p class="pwhy">{p.originNote}</p>
+            </div>
+            <a href={amazonUrl(p.asin)} rel="sponsored nofollow noopener" target="_blank">
+              Check price
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <h2 class="posts-h">Made in USA guides</h2>
+</CategoryPage>
+
+<style>
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .legend > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .legend p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .note {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .stamped {
+    margin-bottom: 3rem;
+  }
+
+  .stamped h2,
+  .posts-h {
+    margin-bottom: 1rem;
+  }
+
+  .stamped ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid var(--navy);
+  }
+
+  .stamped li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pname {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.02rem;
+  }
+
+  .pwhy {
+    margin: 0.15rem 0 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  .stamped a {
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 680px) {
+    .legend {
+      grid-template-columns: 1fr;
+    }
+    .stamped li {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+    .stamped a {
+      grid-column: 2;
+    }
+  }
+</style>

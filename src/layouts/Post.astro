@@ -1,0 +1,226 @@
+---
+import Base from './Base.astro';
+import PostList from '../components/PostList.astro';
+import { CATEGORIES, SITE } from '../config';
+import { formatDate, readMinutes, hasProducts, type Post } from '../lib/posts';
+import heroImages from '../data/hero-images.json';
+
+interface Props {
+  post: Post;
+  related: Post[];
+}
+
+const { post, related } = Astro.props;
+const { title, description, pubDate, updatedDate, category } = post.data;
+const heroImage = post.data.heroImage ?? (heroImages as Record<string, { src: string; alt: string; credit: string; creditUrl: string }>)[post.id];
+const cat = CATEGORIES[category];
+const url = new URL(`/${post.id}/`, Astro.site).toString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  mainEntityOfPage: url,
+  image: heroImage?.src,
+  author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+};
+---
+
+<Base title={title} description={description} image={heroImage?.src} type="article" jsonLd={jsonLd}>
+  <article class="post">
+    <header class="wrap post-head">
+      <p class="crumbs">
+        <a class={`tag tag-${category}`} href={cat.path}>{cat.label}</a>
+      </p>
+      <h1>{title}</h1>
+      <p class="lede">{description}</p>
+      <p class="meta">
+        <span>{updatedDate ? `Updated ${formatDate(updatedDate)}` : formatDate(pubDate)}</span>
+        <span>{readMinutes(post)} min read</span>
+      </p>
+    </header>
+
+    {
+      heroImage && (
+        <figure class="wrap hero-fig">
+          <img src={heroImage.src} alt={heroImage.alt} width="1600" height="900" loading="eager" fetchpriority="high" />
+          <figcaption>
+            Photo by <a href={heroImage.creditUrl} rel="noopener">{heroImage.credit}</a> on{' '}
+            <a href="https://unsplash.com/?utm_source=patriotic_angler&utm_medium=referral" rel="noopener">Unsplash</a>
+          </figcaption>
+        </figure>
+      )
+    }
+
+    <div class="wrap col">
+      <div class="prose">
+        {
+          hasProducts(post) && (
+            <p class="disclosure">
+              This post has links to products on Amazon. If you buy through them, Patriotic Angler may earn a
+              small commission at no extra cost to you. <a href="/affiliate-disclosure/">More about that</a>.
+            </p>
+          )
+        }
+        <slot />
+      </div>
+    </div>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="wrap related" aria-labelledby="related-h">
+        <h2 id="related-h">More {cat.label.toLowerCase()} posts</h2>
+        <PostList posts={related} showCategory={false} />
+      </section>
+    )
+  }
+</Base>
+
+<style>
+  .post-head,
+  .hero-fig,
+  .col,
+  .related {
+    max-width: calc(46rem + 2 * var(--gutter));
+  }
+
+  .post-head {
+    padding-top: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .crumbs {
+    margin-bottom: 1rem;
+  }
+
+  .post-head h1 {
+    max-width: 18ch;
+  }
+
+  .lede {
+    font-size: 1.28rem;
+    line-height: 1.5;
+    color: var(--ink);
+    max-width: 56ch;
+    margin-top: 1rem;
+  }
+
+  .meta {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .hero-fig {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .hero-fig img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #dfe5e0;
+  }
+
+  figcaption {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  figcaption a {
+    color: var(--muted);
+  }
+
+  .prose {
+    margin-top: 2.2rem;
+  }
+
+  .disclosure {
+    font-size: 0.92rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .prose :global(h2) {
+    margin: 2.6rem 0 0.9rem;
+  }
+
+  .prose :global(h3) {
+    margin: 1.9rem 0 0.6rem;
+  }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    padding-left: 1.4rem;
+    margin: 0 0 1.2em;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.45em;
+  }
+
+  .prose :global(ol > li::marker) {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.2em;
+    color: var(--red);
+  }
+
+  .prose :global(ul > li::marker) {
+    color: var(--pumpkin);
+  }
+
+  .prose :global(strong) {
+    font-weight: 700;
+  }
+
+  .prose :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 1rem;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .prose :global(th),
+  .prose :global(td) {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.65rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .prose :global(th) {
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .prose :global(blockquote) {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid var(--brass);
+    color: var(--muted);
+  }
+
+  .related {
+    margin-top: 4rem;
+  }
+
+  .related h2 {
+    margin-bottom: 1rem;
+  }
+</style>

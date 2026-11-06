@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from './PostList.astro';
+import { CATEGORIES, type CategoryKey } from '../config';
+import { getPosts } from '../lib/posts';
+
+interface Props {
+  category: CategoryKey;
+  title: string;
+}
+
+const { category, title } = Astro.props;
+const cat = CATEGORIES[category];
+const posts = (await getPosts()).filter((p) => p.data.category === category);
+---
+
+<Base title={title} description={cat.blurb}>
+  <div class="wrap cat">
+    <p class="crumbs"><span class={`tag tag-${category}`}>{cat.label}</span></p>
+    <h1>{title}</h1>
+    <p class="blurb">{cat.blurb}</p>
+    <slot />
+    {
+      posts.length > 0 ? (
+        <PostList posts={posts} showCategory={false} />
+      ) : (
+        <p>The first posts in this section are on the way. <a href="/">See everything else</a>.</p>
+      )
+    }
+  </div>
+</Base>
+
+<style>
+  .cat {
+    padding-top: clamp(2rem, 6vw, 3.5rem);
+    max-width: calc(46rem + 2 * var(--gutter));
+  }
+
+  .crumbs {
+    margin-bottom: 1rem;
+  }
+
+  .blurb {
+    font-size: 1.25rem;
+    max-width: 52ch;
+    margin: 1rem 0 2rem;
+  }
+</style>

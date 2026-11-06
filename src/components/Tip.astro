@@ -1,0 +1,46 @@
+---
+import Bobber from './Bobber.astro';
+---
+
+<div class="tip" role="note">
+  <Bobber size={30} class="tip-mark" />
+  <div class="tip-body">
+    <p class="tip-title">Tip</p>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .tip {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.9rem;
+    margin: 1.8rem 0;
+    padding: 1rem 1.2rem;
+    background: var(--pumpkin-tint);
+    border-left: 5px solid var(--pumpkin);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .tip :global(.tip-mark) {
+    margin-top: 0.15rem;
+  }
+
+  .tip-title {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #3f4b26;
+    margin: 0 0 0.2rem;
+    line-height: 1.1;
+  }
+
+  .tip-body :global(p) {
+    margin: 0 0 0.5rem;
+    font-size: 1.02rem;
+  }
+
+  .tip-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

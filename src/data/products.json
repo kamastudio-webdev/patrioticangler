@@ -1,0 +1,245 @@
+[
+  {
+    "id": "zoom-super-fluke",
+    "name": "Zoom Salty Super Fluke, 10-pack",
+    "brand": "Zoom Bait Company",
+    "asin": "B005Z82QA4",
+    "kind": "Soft jerkbait",
+    "origin": "usa",
+    "originNote": "Zoom marks its baits Made in USA; retailers such as Academy and Tackle Warehouse list them as Made in USA."
+  },
+  {
+    "id": "zoom-trick-worm",
+    "name": "Zoom Trick Worm, 20-pack",
+    "brand": "Zoom Bait Company",
+    "asin": "B003CTPA56",
+    "kind": "Soft plastic worm",
+    "origin": "usa",
+    "originNote": "Amazon listing shows Country of Origin: United States."
+  },
+  {
+    "id": "zoom-baby-brush-hog",
+    "name": "Zoom Baby Brush Hog, 12-pack",
+    "brand": "Zoom Bait Company",
+    "asin": "B003600IGC",
+    "kind": "Creature bait",
+    "origin": "usa",
+    "originNote": "Zoom marks its baits Made in USA."
+  },
+  {
+    "id": "yamamoto-senko",
+    "name": "Yamamoto 5-inch Senko",
+    "brand": "Gary Yamamoto Custom Baits",
+    "asin": "B00144C25C",
+    "kind": "Stick bait",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "mepps-classic-aglia-kit",
+    "name": "Mepps Classic Aglia Kit",
+    "brand": "Mepps",
+    "asin": "B01417NXXI",
+    "kind": "Inline spinner kit",
+    "origin": "assembled-usa",
+    "originNote": "Mepps hand-assembles every spinner sold in the U.S. in Antigo, Wisconsin, from components made in France."
+  },
+  {
+    "id": "mepps-aglia-bass-kit",
+    "name": "Mepps Aglia Bass Kit",
+    "brand": "Mepps",
+    "asin": "B000LF1PDA",
+    "kind": "Inline spinner kit",
+    "origin": "assembled-usa",
+    "originNote": "Mepps hand-assembles every spinner sold in the U.S. in Antigo, Wisconsin, from components made in France."
+  },
+  {
+    "id": "rooster-tail",
+    "name": "Worden's Original Rooster Tail",
+    "brand": "Yakima Bait",
+    "asin": "B0000AUY3X",
+    "kind": "Inline spinner",
+    "origin": "unknown",
+    "originNote": "Retailers disagree: some list Made in USA, others list Imported. Check the package."
+  },
+  {
+    "id": "mister-twister-teenie",
+    "name": "Mister Twister 2-inch Teenie Twister Tail",
+    "brand": "Mister Twister",
+    "asin": "B00019NFJ8",
+    "kind": "Curly tail grub",
+    "origin": "usa",
+    "originNote": "Amazon listing shows Country of Origin: United States."
+  },
+  {
+    "id": "berkley-power-grub",
+    "name": "Berkley PowerBait Power Grub",
+    "brand": "Berkley",
+    "asin": "B00EO95Z58",
+    "kind": "Curly tail grub",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "berkley-crappie-nibbles",
+    "name": "Berkley PowerBait Crappie Nibbles",
+    "brand": "Berkley",
+    "asin": "B07XM9JWBF",
+    "kind": "Dough bait",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "berkley-trilene-xl",
+    "name": "Berkley Trilene XL Monofilament Line",
+    "brand": "Berkley",
+    "asin": "B0091HDAU0",
+    "kind": "Monofilament line",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "power-pro-braid",
+    "name": "PowerPro Spectra Braided Line",
+    "brand": "PowerPro",
+    "asin": "B0009V0H62",
+    "kind": "Braided line",
+    "origin": "usa",
+    "originNote": "Amazon listing and Tackle Warehouse both list PowerPro as Made in USA."
+  },
+  {
+    "id": "gamakatsu-ewg-hooks",
+    "name": "Gamakatsu EWG Offset Worm Hook, 25-pack",
+    "brand": "Gamakatsu",
+    "asin": "B003P98TXI",
+    "kind": "Worm hooks",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "eagle-claw-panfish-hooks",
+    "name": "Eagle Claw Panfish and Crappie Hook Assortment",
+    "brand": "Eagle Claw",
+    "asin": "B008MGCG2E",
+    "kind": "Hook assortment",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "eagle-claw-split-shot",
+    "name": "Eagle Claw Removable Split Shot Assortment",
+    "brand": "Eagle Claw",
+    "asin": "B000EYY41S",
+    "kind": "Sinkers",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "thill-americas-favorite",
+    "name": "Thill America's Favorite Float",
+    "brand": "Thill",
+    "asin": "B0010FJ1O0",
+    "kind": "Bobber",
+    "origin": "usa",
+    "originNote": "Amazon listing states Made in the USA."
+  },
+  {
+    "id": "thill-slip-bobber-kit",
+    "name": "Thill Pro Series Slip Bobber Rig Kit",
+    "brand": "Thill",
+    "asin": "B007XPAY56",
+    "kind": "Slip bobber kit",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "team-catfish-circle-hooks",
+    "name": "Team Catfish Double Action Circle Hooks",
+    "brand": "Team Catfish",
+    "asin": "B003JETKPU",
+    "kind": "Catfish hooks",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "flambeau-6382",
+    "name": "Flambeau 6382 2-Tray Tackle Box",
+    "brand": "Flambeau Outdoors",
+    "asin": "B074ZVWPLY",
+    "kind": "Tackle box",
+    "origin": "usa",
+    "originNote": "Flambeau has made tackle boxes in the USA since 1947 (Middlefield, Ohio); the Amazon listing states Made in the U.S.A."
+  },
+  {
+    "id": "plano-3-tray",
+    "name": "Plano 3-Tray Tackle Box with Dual Top Access",
+    "brand": "Plano",
+    "asin": "B00FPQRJWQ",
+    "kind": "Tackle box",
+    "origin": "usa",
+    "originNote": "Amazon listing states Made in USA. Plano's hard boxes are made in Illinois; some of its soft bags are made overseas."
+  },
+  {
+    "id": "plano-3700-4pack",
+    "name": "Plano StowAway 3700 Utility Box, 4-pack",
+    "brand": "Plano",
+    "asin": "B0FH7DNNX2",
+    "kind": "Utility boxes",
+    "origin": "usa",
+    "originNote": "Amazon listing states made in the USA."
+  },
+  {
+    "id": "ugly-stik-gx2-spinning",
+    "name": "Ugly Stik GX2 Spinning Combo",
+    "brand": "Ugly Stik",
+    "asin": "B0D1537STT",
+    "kind": "Spinning rod and reel combo",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "zebco-33-combo",
+    "name": "Zebco 33 Spincast Combo",
+    "brand": "Zebco",
+    "asin": "B07XW2PNKX",
+    "kind": "Spincast rod and reel combo",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "pflueger-president",
+    "name": "Pflueger President Spinning Reel",
+    "brand": "Pflueger",
+    "asin": "B0CJZF2MV9",
+    "kind": "Spinning reel",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "st-croix-premier",
+    "name": "St. Croix Premier Spinning Rod",
+    "brand": "St. Croix Rods",
+    "asin": "B002SD38UG",
+    "kind": "Spinning rod",
+    "origin": "usa",
+    "originNote": "St. Croix builds the Premier series in Park Falls, Wisconsin. (Its Triumph, Mojo and Bass-X rods are made in Mexico.)"
+  },
+  {
+    "id": "kastking-cutthroat-pliers",
+    "name": "KastKing Cutthroat 7-inch Fishing Pliers",
+    "brand": "KastKing",
+    "asin": "B07F8RF1NV",
+    "kind": "Pliers",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "boomerang-snip",
+    "name": "Boomerang Snip Retractable Line Cutter",
+    "brand": "Boomerang Tool Company",
+    "asin": "B002BWW99A",
+    "kind": "Line cutter",
+    "origin": "unknown",
+    "originNote": ""
+  }
+]

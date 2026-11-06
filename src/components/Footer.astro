@@ -1,0 +1,100 @@
+---
+import { SITE } from '../config';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div>
+      <p class="name">{SITE.name}</p>
+      <p class="small">
+        Some links on this site go to Amazon. As an Amazon Associate, Patriotic Angler earns from
+        qualifying purchases, at no extra cost to you. <a href="/affiliate-disclosure/">How that works</a>.
+      </p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/how-to/">How-to</a></li>
+        <li><a href="/gear/">Gear</a></li>
+        <li><a href="/made-in-usa/">Made in USA</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p class="small">&copy; {year} {SITE.name}. Check your state's fishing regulations before you go.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--navy-deep);
+    color: #cfd9e2;
+    padding: 3rem 0 1.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  .name {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .small {
+    font-size: 0.95rem;
+    max-width: 52ch;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.45rem;
+    font-size: 0.98rem;
+  }
+
+  ul a {
+    text-decoration: none;
+  }
+
+  ul a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .legal {
+    border-top: 1px solid var(--navy-line);
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+  }
+
+  .legal p {
+    margin: 0;
+  }
+
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
