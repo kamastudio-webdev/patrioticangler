@@ -74,7 +74,11 @@ featured: false
 - `<Tip>Short practical tip, one to three sentences.</Tip>` Use 1 to 3 per post.
 
 Link to other posts on the site with plain markdown links to `/<slug>/`, only to
-slugs in the post list below.
+posts that exist in `src/content/posts/` (the list below should match it). Hub pages
+are `/fishing/<hub>/`.
+
+New posts are added weekly: see `research/weekly-post-runbook.md` and
+`research/post-queue.md`.
 
 ## Post list (slugs)
 - how-to-texas-rig-a-soft-plastic-worm
