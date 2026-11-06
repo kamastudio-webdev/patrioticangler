@@ -27,6 +27,7 @@ const year = new Date().getFullYear();
   </div>
   <div class="wrap legal">
     <p class="small">&copy; {year} {SITE.name}. Check your state's fishing regulations before you go.</p>
+    <p class="small credit">Website design and development by <a href="https://kamastudio.com" rel="noopener">KamaStudio</a></p>
   </div>
 </footer>
 
@@ -86,6 +87,13 @@ const year = new Date().getFullYear();
     border-top: 1px solid var(--navy-line);
     margin-top: 2rem;
     padding-top: 1.2rem;
+  }
+
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
   }
 
   .legal p {
