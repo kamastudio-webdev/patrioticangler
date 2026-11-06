@@ -1,7 +1,7 @@
 ---
 import Base from './Base.astro';
 import PostList from '../components/PostList.astro';
-import { CATEGORIES, SITE } from '../config';
+import { CATEGORIES, SITE, HUBS, hubPath } from '../config';
 import { formatDate, readMinutes, hasProducts, type Post } from '../lib/posts';
 import heroImages from '../data/hero-images.json';
 
@@ -35,6 +35,7 @@ const jsonLd = {
     <header class="wrap post-head">
       <p class="crumbs">
         <a class={`tag tag-${category}`} href={cat.path}>{cat.label}</a>
+        {post.data.hubs.map((h) => <a class="hub" href={hubPath(h)}>{HUBS[h].label}</a>)}
       </p>
       <h1>{title}</h1>
       <p class="lede">{description}</p>
@@ -49,7 +50,8 @@ const jsonLd = {
         <figure class="wrap hero-fig">
           <img src={heroImage.src} alt={heroImage.alt} width="1600" height="900" loading="eager" fetchpriority="high" />
           <figcaption>
-            Photo by <a href={heroImage.creditUrl} rel="noopener">{heroImage.credit}</a> on{' '}
+            {heroImage.credit === 'The New York Public Library' ? 'Illustration from' : 'Photo by'}{' '}
+            <a href={heroImage.creditUrl} rel="noopener">{heroImage.credit}</a> on{' '}
             <a href="https://unsplash.com/?utm_source=patriotic_angler&utm_medium=referral" rel="noopener">Unsplash</a>
           </figcaption>
         </figure>
@@ -95,6 +97,25 @@ const jsonLd = {
 
   .crumbs {
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .hub {
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.3rem 0.55rem 0.33rem;
+    border: 1.5px solid var(--navy);
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .hub:hover {
+    background: var(--navy);
+    color: #fff;
   }
 
   .post-head h1 {

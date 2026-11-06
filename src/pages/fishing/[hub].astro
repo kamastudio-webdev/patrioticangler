@@ -1,0 +1,106 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { HUBS, hubPath, type HubKey } from '../../config';
+import { getPosts } from '../../lib/posts';
+
+export function getStaticPaths() {
+  return (Object.keys(HUBS) as HubKey[]).map((hub) => ({ params: { hub } }));
+}
+
+const hub = Astro.params.hub as HubKey;
+const h = HUBS[hub];
+const all = await getPosts();
+const posts = all.filter((p) => p.data.hubs.includes(hub));
+const featured = posts.filter((p) => p.data.featured);
+const rest = posts.filter((p) => !p.data.featured);
+const others = (Object.keys(HUBS) as HubKey[]).filter((k) => k !== hub);
+---
+
+<Base title={`${h.label} fishing guides`} description={`${h.blurb} ${h.species}.`}>
+  <div class="wrap page">
+    <p class="crumbs"><a href="/fishing/">All fishing types</a> <span aria-hidden="true">/</span> {h.water}</p>
+    <h1>{h.label}</h1>
+    <p class="lede">{h.blurb}</p>
+    <p class="species"><strong>Covers:</strong> {h.species}.</p>
+
+    {
+      posts.length > 0 ? (
+        <PostList posts={[...featured, ...rest]} />
+      ) : (
+        <p>Guides for this section are on the way. <a href="/fishing/">See the other fishing types</a>.</p>
+      )
+    }
+
+    <nav class="more" aria-label="Other fishing types">
+      <h2>Other kinds of fishing</h2>
+      <ul>
+        {
+          others.map((k) => (
+            <li>
+              <a href={hubPath(k)}>{HUBS[k].label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-top: clamp(2rem, 6vw, 3.5rem);
+    max-width: calc(46rem + 2 * var(--gutter));
+  }
+
+  .crumbs {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+  }
+
+  .lede {
+    font-size: 1.25rem;
+    max-width: 52ch;
+    margin: 1rem 0 0.6rem;
+  }
+
+  .species {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .more {
+    margin-top: 3rem;
+  }
+
+  .more h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .more ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .more a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    border: 2px solid var(--navy);
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .more a:hover {
+    background: var(--navy);
+    color: #fff;
+  }
+</style>

@@ -241,5 +241,392 @@
     "kind": "Line cutter",
     "origin": "unknown",
     "originNote": ""
+  },
+  {
+    "id": "penn-battle-iv-reel",
+    "name": "PENN Battle IV Spinning Reel",
+    "brand": "PENN",
+    "asin": "B0D19MW8K8",
+    "kind": "Spinning reel",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "penn-pursuit-v-combo",
+    "name": "PENN Pursuit V Spinning Combo",
+    "brand": "PENN",
+    "asin": "B0FDN4Z6L5",
+    "kind": "Spinning rod and reel combo",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "ugly-stik-carbon-inshore-combo",
+    "name": "Ugly Stik Carbon Inshore Rod with PENN Pursuit IV Reel",
+    "brand": "Ugly Stik",
+    "asin": "B0F29YRNLF",
+    "kind": "Inshore spinning combo",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "seaguar-blue-label-leader",
+    "name": "Seaguar Blue Label Fluorocarbon Leader",
+    "brand": "Seaguar",
+    "asin": "B0007PFBCA",
+    "kind": "Fluorocarbon leader",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "zman-diezel-minnowz",
+    "name": "Z-Man DieZel MinnowZ",
+    "brand": "Z-Man",
+    "asin": "B07W14Y6YW",
+    "kind": "Paddle tail swimbait",
+    "origin": "usa",
+    "originNote": "Z-Man molds its ElaZtech baits at its plant in Ladson, South Carolina; Academy and the Amazon listing both say Made in USA."
+  },
+  {
+    "id": "zman-slim-swimz",
+    "name": "Z-Man Slim SwimZ",
+    "brand": "Z-Man",
+    "asin": "B076SBVZQW",
+    "kind": "Small paddle tail swimbait",
+    "origin": "usa",
+    "originNote": "Z-Man molds its ElaZtech baits at its plant in Ladson, South Carolina; the Amazon listing says Made in the USA."
+  },
+  {
+    "id": "zman-finesse-trd",
+    "name": "Z-Man Finesse TRD",
+    "brand": "Z-Man",
+    "asin": "B01HC2MKUQ",
+    "kind": "Ned rig bait",
+    "origin": "usa",
+    "originNote": "Z-Man molds its ElaZtech baits at its plant in Ladson, South Carolina; the Amazon listing says Made in the USA."
+  },
+  {
+    "id": "zman-redfish-eye-jighead",
+    "name": "Z-Man Redfish Eye Jigheads",
+    "brand": "Z-Man",
+    "asin": "B01N99FECA",
+    "kind": "Jig heads",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "doa-shrimp",
+    "name": "D.O.A. Shrimp, 3-inch",
+    "brand": "D.O.A. Lures",
+    "asin": "B003ML54T6",
+    "kind": "Soft plastic shrimp",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "gulp-shrimp",
+    "name": "Berkley Gulp! Saltwater Shrimp",
+    "brand": "Berkley",
+    "asin": "B001H0G150",
+    "kind": "Scented soft shrimp",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "bomber-paradise-popper",
+    "name": "Bomber Paradise Popper X-Treme Popping Cork",
+    "brand": "Bomber Saltwater Grade",
+    "asin": "B003FYNC4Y",
+    "kind": "Popping cork",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "penn-squall-ii",
+    "name": "PENN Squall II Level Wind Conventional Reel",
+    "brand": "PENN",
+    "asin": "B096G9YJ7P",
+    "kind": "Conventional reel",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "penn-senator",
+    "name": "PENN Senator Star Drag Conventional Reel",
+    "brand": "PENN",
+    "asin": "B00470KBS0",
+    "kind": "Conventional reel",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "mustad-demon-circle",
+    "name": "Mustad Demon Perfect Circle In-Line Hooks",
+    "brand": "Mustad",
+    "asin": "B0084EGJT0",
+    "kind": "Circle hooks",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "seaqualizer",
+    "name": "SeaQualizer Fish Descending Device",
+    "brand": "SeaQualizer",
+    "asin": "B072BFXFWF",
+    "kind": "Descending device",
+    "origin": "usa",
+    "originNote": "The Amazon listing states Made in USA."
+  },
+  {
+    "id": "sabiki-rig",
+    "name": "Sabiki Fish Skin Bait Rig",
+    "brand": "Sabiki",
+    "asin": "B000ALJ9ME",
+    "kind": "Bait-catching rig",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "cuda-saltwater-pliers",
+    "name": "Cuda 10-inch Titanium Bonded Pliers",
+    "brand": "Cuda",
+    "asin": "B01LRYEPNU",
+    "kind": "Saltwater pliers",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "egg-sinker-assortment",
+    "name": "Egg Sinker Assortment",
+    "brand": "Generic",
+    "asin": "B08GBYZNTB",
+    "kind": "Egg sinkers",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "bobby-garland-baby-shad",
+    "name": "Bobby Garland Baby Shad, 50-count",
+    "brand": "Bobby Garland",
+    "asin": "B0FB5ZJKZL",
+    "kind": "Crappie soft plastic",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "strike-king-mr-crappie-jigheads",
+    "name": "Strike King Mr. Crappie Jig Heads, 25-pack",
+    "brand": "Strike King",
+    "asin": "B01HC0IJB2",
+    "kind": "Crappie jig heads",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "crappie-magnet-kit",
+    "name": "Crappie Magnet Best of the Best Kit",
+    "brand": "Leland Lures",
+    "asin": "B00C8TIQ9I",
+    "kind": "Crappie jig kit",
+    "origin": "usa",
+    "originNote": "Leland's Lures marks Crappie Magnet baits Made in USA; FishUSA, Academy and the Amazon listing say the same."
+  },
+  {
+    "id": "frabill-flow-troll-bucket",
+    "name": "Frabill Flow Troll Bait Bucket",
+    "brand": "Frabill",
+    "asin": "B000EYYPPI",
+    "kind": "Minnow bucket",
+    "origin": "usa",
+    "originNote": "The Amazon listing states Made in the USA."
+  },
+  {
+    "id": "rebel-crawfish",
+    "name": "Rebel Original Crawfish Crankbait",
+    "brand": "Rebel",
+    "asin": "B071GZQZHY",
+    "kind": "Crawfish crankbait",
+    "origin": "usa",
+    "originNote": "The Amazon listing states Made in USA."
+  },
+  {
+    "id": "strike-king-kvd-15",
+    "name": "Strike King KVD 1.5 Squarebill",
+    "brand": "Strike King",
+    "asin": "B0043FNFN2",
+    "kind": "Squarebill crankbait",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "dardevle-spoon",
+    "name": "Eppinger Dardevle Spoon",
+    "brand": "Eppinger",
+    "asin": "B0000AUVCD",
+    "kind": "Casting spoon",
+    "origin": "usa",
+    "originNote": "Eppinger makes Dardevle spoons in Dearborn, Michigan, where the company has been since 1959."
+  },
+  {
+    "id": "johnson-silver-minnow",
+    "name": "Johnson Silver Minnow Weedless Spoon",
+    "brand": "Johnson",
+    "asin": "B0000C6DW6",
+    "kind": "Weedless spoon",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "afw-steel-leaders",
+    "name": "AFW Surflon Nylon-Coated Stainless Steel Leaders",
+    "brand": "American Fishing Wire",
+    "asin": "B004VZJWLI",
+    "kind": "Wire leaders",
+    "origin": "usa",
+    "originNote": "The Amazon listing says AFW leaders are made in the USA at the company's factory."
+  },
+  {
+    "id": "cuda-jaw-spreader",
+    "name": "Cuda Jaw Spreader",
+    "brand": "Cuda",
+    "asin": "B01EB1J5ZY",
+    "kind": "Jaw spreader",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "long-nose-pliers",
+    "name": "Booms Fishing 11.5-inch Long Nose Pliers",
+    "brand": "Booms Fishing",
+    "asin": "B0F7QZPVJ5",
+    "kind": "Long-nose pliers",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "northland-fireball-jig",
+    "name": "Northland Fire-Ball Jig",
+    "brand": "Northland Tackle",
+    "asin": "B07MJCK9B4",
+    "kind": "Walleye jig",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "lindy-walking-sinker",
+    "name": "Lindy Walking Sinker",
+    "brand": "Lindy",
+    "asin": "B00068VBW2",
+    "kind": "Walking sinker",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "berkley-flicker-shad",
+    "name": "Berkley Flicker Shad",
+    "brand": "Berkley",
+    "asin": "B0CLW3ZKC3",
+    "kind": "Trolling crankbait",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "pautzke-balls-o-fire",
+    "name": "Pautzke Balls O' Fire Salmon Eggs",
+    "brand": "Pautzke",
+    "asin": "B003OCA4TS",
+    "kind": "Salmon eggs",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "blue-fox-vibrax",
+    "name": "Blue Fox Super Vibrax Inline Spinners, 3-pack",
+    "brand": "Blue Fox",
+    "asin": "B003OB7TEM",
+    "kind": "Inline spinner",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "kastmaster",
+    "name": "Acme Kastmaster Spoon",
+    "brand": "Acme",
+    "asin": "B0CX6531VC",
+    "kind": "Casting spoon",
+    "origin": "unknown",
+    "originNote": "Labels disagree: the Amazon listing says Made in USA, but reports say production moved overseas. Check the package."
+  },
+  {
+    "id": "powerbait-trout-dough",
+    "name": "Berkley PowerBait Trout Dough Bait",
+    "brand": "Berkley",
+    "asin": "B0000AV1L0",
+    "kind": "Trout dough bait",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "strikemaster-mora-auger",
+    "name": "StrikeMaster Mora 2-Piece Hand Auger",
+    "brand": "StrikeMaster",
+    "asin": "B001UU111Q",
+    "kind": "Hand ice auger",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "ht-polar-tip-up",
+    "name": "HT Polar Tip-Up",
+    "brand": "HT Enterprises",
+    "asin": "B0000AUUUF",
+    "kind": "Tip-up",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "frabill-ice-picks",
+    "name": "Frabill Retractable Ice Picks",
+    "brand": "Frabill",
+    "asin": "B004D1PUTS",
+    "kind": "Ice safety picks",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "ugly-stik-gx2-ice-combo",
+    "name": "Ugly Stik GX2 Ice Fishing Combo",
+    "brand": "Ugly Stik",
+    "asin": "B0DYGFCR9K",
+    "kind": "Ice rod and reel combo",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "swedish-pimple",
+    "name": "Bay de Noc Swedish Pimple",
+    "brand": "Bay de Noc Lure Co.",
+    "asin": "B0000AUYJ3",
+    "kind": "Jigging spoon",
+    "origin": "usa",
+    "originNote": "Bay de Noc Lure Co. has made the Swedish Pimple in Michigan since 1955, casting to packaging in-house."
+  },
+  {
+    "id": "dehooker",
+    "name": "Fish Hook Remover Tool, 13.6-inch",
+    "brand": "Generic",
+    "asin": "B071VG4MFH",
+    "kind": "Hook remover",
+    "origin": "unknown",
+    "originNote": ""
+  },
+  {
+    "id": "rod-holder",
+    "name": "PLUSINNO Bank Fishing Rod Holders",
+    "brand": "PLUSINNO",
+    "asin": "B0BTBDY2G8",
+    "kind": "Bank rod holders",
+    "origin": "unknown",
+    "originNote": ""
   }
 ]

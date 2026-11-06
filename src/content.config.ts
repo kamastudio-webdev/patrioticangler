@@ -12,6 +12,9 @@ const posts = defineCollection({
     category: z.enum(['how-to', 'gear', 'made-in-usa']),
     tags: z.array(z.string()).default([]),
     species: z.array(z.string()).default([]),
+    hubs: z
+      .array(z.enum(['bass', 'crappie-panfish', 'catfish', 'trout-salmon', 'pike-walleye', 'ice', 'inshore', 'offshore']))
+      .default([]),
     featured: z.boolean().default(false),
     heroImage: z
       .object({

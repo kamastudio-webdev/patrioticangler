@@ -1,0 +1,123 @@
+---
+// The fishing-type hubs laid out like the compartments of a tackle tray.
+import { HUBS, hubPath, type HubKey } from '../config';
+import { getPosts } from '../lib/posts';
+
+const posts = await getPosts();
+const counts = Object.fromEntries(
+  (Object.keys(HUBS) as HubKey[]).map((k) => [k, posts.filter((p) => p.data.hubs.includes(k)).length]),
+);
+const waterClass = (w: string) => (w === 'Saltwater' ? 'salt' : w === 'Hard water' ? 'ice' : 'fresh');
+---
+
+<ul class="tray">
+  {
+    (Object.keys(HUBS) as HubKey[]).map((k) => {
+      const h = HUBS[k];
+      return (
+        <li class={waterClass(h.water)}>
+          <a href={hubPath(k)}>
+            <span class="water">{h.water}</span>
+            <span class="label">{h.label}</span>
+            <span class="species">{h.species}</span>
+            <span class="count">
+              {counts[k]} {counts[k] === 1 ? 'guide' : 'guides'}
+            </span>
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .tray {
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    background: var(--navy);
+    border-radius: 12px;
+  }
+
+  li {
+    border-radius: 6px;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .fresh {
+    background: #eef1e6;
+  }
+
+  .salt {
+    background: #e4edf4;
+  }
+
+  .ice {
+    background: #f7fafc;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.1rem 1.05rem;
+    text-decoration: none;
+    color: var(--ink);
+    border-radius: 6px;
+  }
+
+  a:hover {
+    background: rgba(255, 255, 255, 0.65);
+  }
+
+  a:hover .label {
+    color: var(--red-dark);
+  }
+
+  .water {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .label {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 1.7rem;
+    line-height: 1.02;
+    color: var(--navy);
+    margin: 0.2rem 0 0.4rem;
+  }
+
+  .species {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: var(--muted);
+    flex: 1;
+  }
+
+  .count {
+    margin-top: 0.7rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  @media (max-width: 900px) {
+    .tray {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 420px) {
+    .label {
+      font-size: 1.45rem;
+    }
+    a {
+      padding: 0.85rem 0.85rem 0.9rem;
+    }
+  }
+</style>

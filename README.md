@@ -11,6 +11,7 @@ Fishing how-tos and gear guides for patrioticangler.com, built with [Astro](http
 | Post header photos (Unsplash) | `src/data/hero-images.json` |
 | Amazon Associates tag | `AMAZON_TAG` in `src/config.ts` |
 | Writing rules for posts | `research/writing-brief.md` |
+| Fishing-type pages (bass, ice, inshore...) | `HUBS` in `src/config.ts`; a post joins one with `hubs: ["bass"]` in its frontmatter |
 
 ## Products and the Made in USA stamp
 

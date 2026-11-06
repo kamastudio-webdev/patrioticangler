@@ -51,10 +51,13 @@ pubDate: 2026-11-06
 category: how-to
 tags: ["bass", "soft plastics", "rigs"]
 species: ["largemouth bass"]
+hubs: ["bass"]
 featured: false
 ---
 ```
 
+- `hubs` puts the post on the fishing-type pages. Use one or more of: `bass`, `crappie-panfish`,
+  `catfish`, `trout-salmon`, `pike-walleye`, `ice`, `inshore`, `offshore`. Use `[]` for general posts.
 - Length: 900 to 1,500 words. Use `##` for main sections and `###` sparingly.
   Never use `#` (the page adds the title).
 - Numbered lists ONLY for actual step sequences. Bullets for unordered items.
@@ -84,3 +87,23 @@ slugs in the post list below.
 - best-tackle-boxes-for-beginners
 - trout-fishing-with-inline-spinners
 - spinning-vs-spincast-first-fishing-reel
+- inshore-saltwater-fishing-for-beginners
+- how-to-fish-a-popping-cork
+- offshore-fishing-for-beginners
+- bottom-fishing-for-snapper-and-grouper
+- largemouth-bass-fishing-for-beginners
+- smallmouth-bass-fishing-for-beginners
+- crappie-fishing-for-beginners
+- double-uni-knot-braid-to-leader
+- northern-pike-fishing-for-beginners
+- walleye-fishing-for-beginners
+- salmon-fishing-for-beginners
+- stocked-trout-fishing-with-powerbait
+- ice-fishing-for-beginners
+
+## Regulations
+Saltwater and salmon fishing are heavily regulated, and the rules change often. Never state a
+specific season date, bag limit or size limit. Say what kind of rule exists and tell readers
+where to check (their state wildlife agency; NOAA Fisheries for federal waters). Saltwater
+usually needs a separate saltwater license, and many states require a free registration (for
+example Florida's State Reef Fish Angler designation) for some species.

@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import TackleTray from '../../components/TackleTray.astro';
+---
+
+<Base
+  title="Fishing guides by type"
+  description="Bass, crappie, catfish, trout and salmon, pike and walleye, ice fishing, inshore and offshore saltwater: pick the fishing you do."
+>
+  <div class="wrap page">
+    <h1>What are you fishing for?</h1>
+    <p class="lede">Pick the kind of fishing you do. Each page gathers the how-tos and gear for it.</p>
+    <TackleTray />
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-top: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .lede {
+    font-size: 1.25rem;
+    max-width: 52ch;
+    margin: 1rem 0 2rem;
+  }
+</style>

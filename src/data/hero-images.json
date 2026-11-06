@@ -58,5 +58,83 @@
     "alt": "Close-up of a hand holding a spinning reel on a rod",
     "credit": "Brady Rogers",
     "creditUrl": "https://unsplash.com/@bradydrogers?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "inshore-saltwater-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722797657625-f388cc0b3a1b?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a red drum, the fish inshore anglers call redfish",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "how-to-fish-a-popping-cork": {
+    "src": "https://images.unsplash.com/photo-1589282904220-20abcaafd670?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "A fishing rod resting against a dock post on the coast at sunset",
+    "credit": "Chris Hardy",
+    "creditUrl": "https://unsplash.com/@chrishardyphotography?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "offshore-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1625183656263-171183307b15?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "A head boat full of anglers heading offshore in the Atlantic",
+    "credit": "Gene Gallin",
+    "creditUrl": "https://unsplash.com/@genefoto?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "bottom-fishing-for-snapper-and-grouper": {
+    "src": "https://images.unsplash.com/photo-1722799280335-3ac243c6494c?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a mangrove snapper",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "largemouth-bass-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722798485975-8933f4d23344?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a largemouth bass",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "smallmouth-bass-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722798485883-77869d1f9116?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a smallmouth bass",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "crappie-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722798485945-17e38582a54b?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a common sunfish, a panfish cousin of the crappie",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "double-uni-knot-braid-to-leader": {
+    "src": "https://images.unsplash.com/photo-1541742425281-c1d3fc8aff96?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "A fishing rod and line silhouetted over the water at golden hour",
+    "credit": "James Wheeler",
+    "creditUrl": "https://unsplash.com/@souvenirpixels?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "northern-pike-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722798485908-d9489125ea66?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a northern pike",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "walleye-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1722799280380-c268035e11ea?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a yellow perch, a close cousin of the walleye",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "salmon-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1653978787896-0cf89060a3bf?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An angler releasing a salmon back into a river",
+    "credit": "John Cameron",
+    "creditUrl": "https://unsplash.com/@john_cameron?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "stocked-trout-fishing-with-powerbait": {
+    "src": "https://images.unsplash.com/photo-1722797657729-927c6e21849a?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An 1898 illustration of a rainbow trout",
+    "credit": "The New York Public Library",
+    "creditUrl": "https://unsplash.com/@nypl?utm_source=patriotic_angler&utm_medium=referral"
+  },
+  "ice-fishing-for-beginners": {
+    "src": "https://images.unsplash.com/photo-1742451866569-5bfb25d2e16c?ixlib=rb-4.1.0&auto=format&fit=crop&crop=entropy&w=1600&h=900&q=75",
+    "alt": "An angler ice fishing on a frozen lake",
+    "credit": "Alex Rashin",
+    "creditUrl": "https://unsplash.com/@purgen?utm_source=patriotic_angler&utm_medium=referral"
   }
 }
