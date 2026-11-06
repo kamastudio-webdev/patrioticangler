@@ -10,7 +10,7 @@ export const SITE = {
  * Leave empty until Amazon approves the account, then paste the tag here
  * (it looks like "patrioticangl-20"). Every product button updates at once.
  */
-export const AMAZON_TAG = '';
+export const AMAZON_TAG = 'kamastudio-20';
 
 export function amazonUrl(asin: string): string {
   const base = `https://www.amazon.com/dp/${asin}/`;
