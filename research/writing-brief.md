@@ -104,6 +104,7 @@ New posts are added weekly: see `research/weekly-post-runbook.md` and
 - salmon-fishing-for-beginners
 - stocked-trout-fishing-with-powerbait
 - ice-fishing-for-beginners
+- fishing-gifts-for-beginners
 
 ## Regulations
 Saltwater and salmon fishing are heavily regulated, and the rules change often. Never state a

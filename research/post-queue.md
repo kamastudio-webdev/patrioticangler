@@ -15,7 +15,7 @@ Format: `- [ ] target date | slug | category | hubs | angle`
 
 ## Queue
 
-- [ ] 2026-11-12 | fishing-gifts-for-beginners | gear | [] | (seasonal) Holiday gift guide before Black Friday (Nov 27). Useful gifts for a new angler at a few price levels, built from products already in products.json: starter combo, tackle box, pliers, lure kits, line. Group as stocking stuffers vs main gifts. No prices (Amazon rules). Skip after Dec 20.
+- [x] 2026-11-12 | fishing-gifts-for-beginners | gear | [] | (seasonal) Holiday gift guide before Black Friday (Nov 27). Useful gifts for a new angler at a few price levels, built from products already in products.json: starter combo, tackle box, pliers, lure kits, line. Group as stocking stuffers vs main gifts. No prices (Amazon rules). Skip after Dec 20. | published 2026-11-12
 - [ ] 2026-11-19 | american-made-fishing-gifts | made-in-usa | [] | (seasonal) Gift guide using ONLY products stamped usa or assembled-usa in products.json. Link to /made-in-usa/ and /american-made-fishing-gear-guide/. Skip after Dec 20.
 - [ ] 2026-11-26 | winter-bass-fishing | how-to | ["bass"] | (seasonal) Bass slow down in cold water: fish deeper, slower, smaller. Jigs, blade baits, suspending jerkbaits, Ned rig. Sunny afternoons, wind-protected banks. Southern vs northern winters.
 - [ ] 2026-12-03 | sheepshead-fishing-for-beginners | how-to | ["inshore"] | (seasonal) Winter inshore fish along the Atlantic and Gulf. Pilings, jetties, docks, bridges. Fiddler crabs, shrimp, barnacles. Small strong hooks, short leader, feel for the light bite. Teeth, spines, handling.
